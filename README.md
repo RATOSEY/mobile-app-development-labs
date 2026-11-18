@@ -1,17 +1,71 @@
-# my_project
+# Розроблення мобільних додатків
+Репозиторій лабораторних робіт з дисципліни "Розроблення мобільних додатків". Містить методичні вказівки, шаблони коду та практичні завдання для опанування основ мобільної розробки.
 
-A new Flutter project.
+---
 
-## Getting Started
+Список лабораторних робіт:
+- [Лабораторна робота №1](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-01). Розроблення інтерактивних елементів інтерфейсу користувача засобами фреймворку Flutter
+- [Лабораторна робота №2](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-02). Проєктування та розроблення кастомних віджетів візуальної складової мобільного застосунку
+- [Лабораторна робота №3](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-03). Реалізація базової бізнес-логіки та функціональних інтерфейсів мобільного застосунку
+- [Лабораторна робота №4](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-04). Інтеграція підсистеми авторизації та налаштування взаємодії з MQTT-пристроями
+- [Лабораторна робота №5](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-05). Інтеграція мобільного застосунку із зовнішніми програмними інтерфейсами (REST API)
+- [Лабораторна робота №6](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-06). Архітектурний рефакторинг та управління станом застосунку (State Management)
+- [Лабораторна робота №7](https://github.com/Berezhnyj/mobile-app-development-labs/tree/lab-07). Розроблення та інтеграція платформозалежних плагінів (Native Plugins)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 📄 Ліцензія
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Матеріали в цьому репозиторії поширюються на умовах **подвійного ліцензування**:
+
+---
+
+### 💻 Програмний код
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE-CODE)
+
+Весь програмний код, розташований у папках:
+- `src/`
+- `examples/`
+- будь-які інші папки з вихідним кодом
+
+ліцензовано згідно з **MIT License**.
+
+Це означає, що ви можете:
+- ✅ Використовувати код у комерційних проєктах
+- ✅ Модифікувати та адаптувати код
+- ✅ Поширювати код
+- ✅ Субліцензувати код
+
+Єдина умова — збереження повідомлення про авторські права.
+
+---
+
+### 📚 Навчальні матеріали
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](LICENSE-TEXT)
+
+Навчальні тексти, документація, методичні вказівки та інші медіафайли ліцензовано згідно з **Creative Commons Attribution-ShareAlike 4.0 International License**.
+
+Це означає, що ви можете:
+- ✅ Використовувати матеріали в будь-яких цілях (включно з комерційними)
+- ✅ Копіювати та поширювати матеріали
+- ✅ Адаптувати, змінювати та створювати похідні роботи
+
+За умов:
+- 📌 **Attribution (BY)** — обов'язкове зазначення авторства
+- 🔄 **ShareAlike (SA)** — похідні роботи мають поширюватися під тією ж ліцензією
+
+---
+
+### 📖 Короткий виклад
+
+| Тип матеріалів | Ліцензія | Значок |
+|----------------|----------|--------|
+| **Програмний код** | MIT License | [![MIT](https://img.shields.io/badge/MIT-yellow.svg)](LICENSE-CODE) |
+| **Навчальні тексти** | CC BY-SA 4.0 | [![CC BY-SA](https://img.shields.io/badge/CC%20BY--SA-lightgrey.svg)](LICENSE-TEXT) |
+
+---
+
+> 💡 **Примітка:** Детальні умови кожної ліцензії наведено у файлах [`LICENSE-CODE`](LICENSE-CODE) та [`LICENSE-TEXT`](LICENSE-TEXT) відповідно.
