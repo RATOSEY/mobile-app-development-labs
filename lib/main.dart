@@ -1,3 +1,4 @@
+// ignore: deprecated_member_use
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,37 +29,28 @@ class CounterScreen extends StatefulWidget {
 }
 
 class _CounterScreenState extends State<CounterScreen> {
-  // Локальний стан лічильника
   int _counter = 0;
-
-  // Контролер для зчитування тексту з TextField
   final TextEditingController _controller = TextEditingController();
 
-  // Метод обробки введених даних
   void _processInput() {
     final input = _controller.text;
 
-    // Сценарій 2: Термінальна команда
-    if (input == "Avada Kedavra") {
+    if (input == 'Avada Kedavra') {
       setState(() {
         _counter = 0;
       });
-      _controller.clear(); // Очищаємо поле після успішної команди
+      _controller.clear();
       return;
     }
 
-    // Спроба розпарсити введене значення як ціле число
     final intValue = int.tryParse(input);
 
     if (intValue != null) {
-      // Сценарій 1: Математична операція (інкремент)
       setState(() {
         _counter += intValue;
       });
       _controller.clear();
     } else {
-      // Сценарій 3: Обробка виключень (невалідний стан)
-      // Виводимо SnackBar, стан лічильника не змінюється
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Помилка: введіть ціле число або секретну команду.'),
@@ -71,7 +63,6 @@ class _CounterScreenState extends State<CounterScreen> {
 
   @override
   void dispose() {
-    // Звільнення ресурсів контролера для уникнення витоків пам'яті
     _controller.dispose();
     super.dispose();
   }
@@ -84,7 +75,7 @@ class _CounterScreenState extends State<CounterScreen> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -102,7 +93,6 @@ class _CounterScreenState extends State<CounterScreen> {
               ),
             ),
             const SizedBox(height: 48),
-            // Компонент введення даних
             TextField(
               controller: _controller,
               decoration: const InputDecoration(
@@ -110,7 +100,6 @@ class _CounterScreenState extends State<CounterScreen> {
                 labelText: 'Введіть число або команду',
                 hintText: 'Наприклад: 5, -3 або Avada Kedavra',
               ),
-              // Обробка натискання Enter на клавіатурі
               onSubmitted: (_) => _processInput(),
             ),
             const SizedBox(height: 24),
